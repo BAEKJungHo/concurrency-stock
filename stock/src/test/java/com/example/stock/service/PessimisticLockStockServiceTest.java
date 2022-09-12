@@ -12,13 +12,13 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-class StockServiceTest {
+class PessimisticLockStockServiceTest {
 
     @Autowired
-    private StockService stockService;
+    private PessimisticLockStockService stockService;
 
     @Autowired
     private StockRepository stockRepository;
